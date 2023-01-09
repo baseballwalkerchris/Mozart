@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta name = "viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mozart project</title>
+    <link rel="stylesheet" href="style.css"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"  >
+    </head>
+<body>
+    <section class="header">
+     <nav>
+        <a href="index.html"><img src="images/logo.jpg"></a> 
+             <div class = "nav-links">
+                 <ul>
+                    <li ><a href="">HOME</a></li>
+                    <li ><a href=""> FEED</a></li>
+                    <li ><a href=""> SIGN IN</a></li>
+                    <li ><a href="./SignUp.html">SIGN UP</a></li>
+                </ul>
+             </div>
+
+     </nav>
+
+    <section class="inputInfo">
+        <form action="" method="POST">
+           <label for="description"><b>Description of Event:</b></label> 
+           <textarea rows="3" cols="30" name="description" id="description"></textarea>
+           
+           <label for="Location"><b>Location</b></label>
+           <input type="text" placeholder="Enter Location" name="Location" id="Location" required>
+
+           <label for="Date"><b>Date</b></label>
+           <input type="text" placeholder="Enter Date" name="Date" id="Date" required>
+
+           <label for="Requirements"><b>Requirements</b></label>
+           <textarea rows="3" cols="30" name="Requirements" id="Requirements"></textarea>
+
+           <label for="Compensation"><b>Compensation:</b></label>
+           <input type="text" placeholder="Enter Compensation" name="Compensation" id="Compensation" required>
+
+           <input type="submit" name="submit" id="submit">
+        </form>
+    </section>
+</body>
+</html>

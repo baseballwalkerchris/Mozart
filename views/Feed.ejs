@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta name = "viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mozart project</title>
+    <link rel="stylesheet" href="style.css"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"  >
+    </head>
+<body>
+    <section class="header">
+     <nav>  
+        <a href="home.html"><img src="./images/logo.jpg"></a> 
+             <div class = "nav-links">
+                 <ul>
+                    <li ><a href="./home.html">HOME</a></li>
+                    <li ><a href=""> FEED</a></li>
+                    <li ><a href=""> SIGN IN</a></li>
+                    <li ><a href="./SignUp.html">SIGN UP</a></li>
+                </ul>
+             </div>
+
+    </nav>
+
+    <div class="crevent">
+        <button><a href="./index">Create Event</a></button>
+    </div>
+    <div class="Feed">
+        <table class = "table">
+            <tr class = 'items1'>
+                <th>User</th>
+                <th>Description</th>
+                <th>Location</th>
+                <th>Requirements</th>
+                <th>Compensation</th>
+                <th>Date</th>
+            </tr>
+            <% Events.forEach(function(item) { %>
+                <tr class='items'>
+                    <td><%= item.user %></td>
+                    <td><%= item.description %></td>
+                    <td><%= item.location %></td>
+                    <td><%= item.requirements %></td>
+                    <td><%= item.compensation %></td>
+                    <td><%= item.date %></td>
+                    
+                </tr>
+            <% }) %>
+        </table>
+    </div>
+</body>
+</html>
+
