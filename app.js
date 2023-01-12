@@ -29,12 +29,12 @@ app.get('/index', (req, res)=> {
 });
 
 
-app.get('/Feed', function(req, res, next) {
+app.get('/feed', function(req, res, next) {
   Events.find({}, function(err, Events) {
     if(err) {
       res.send('something went really wrong');
     }
-    res.render("Feed", {Events: Events});
+    res.render("feed", {Events: Events});
   });
 })
 

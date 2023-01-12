@@ -72,13 +72,18 @@ nav img {
     size: 20%;
 }
 
-.Feed.table.items1 th{
+thead, tbody {
     position: relative;
     display: flex;
     text-align: right;
-
+    color: white;
 } 
-/*Create event information page*/
+
+table {
+    border: 1px solid white;
+    border-spacing: 20px 0;
+}
+/*index*/
 
 .inputInfo form{
     color: white;

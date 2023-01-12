@@ -17,7 +17,7 @@
              <div class = "nav-links">
                  <ul>
                     <li ><a href="./home.html">HOME</a></li>
-                    <li ><a href=""> FEED</a></li>
+                    <li ><a href="./feed.ejs"> FEED</a></li>
                     <li ><a href=""> SIGN IN</a></li>
                     <li ><a href="./SignUp.html">SIGN UP</a></li>
                 </ul>
@@ -30,6 +30,7 @@
     </div>
     <div class="Feed">
         <table class = "table">
+            <thead>
             <tr class = 'items1'>
                 <th>User</th>
                 <th>Description</th>
@@ -38,7 +39,9 @@
                 <th>Compensation</th>
                 <th>Date</th>
             </tr>
+            </thead>
             <% Events.forEach(function(item) { %>
+                <tbody>
                 <tr class='items'>
                     <td><%= item.user %></td>
                     <td><%= item.description %></td>
@@ -46,8 +49,8 @@
                     <td><%= item.requirements %></td>
                     <td><%= item.compensation %></td>
                     <td><%= item.date %></td>
-                    
                 </tr>
+                </tbody>
             <% }) %>
         </table>
     </div>
